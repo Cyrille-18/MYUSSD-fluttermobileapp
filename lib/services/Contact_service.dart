@@ -7,7 +7,8 @@ class ContactService {
       // Vérifie si l'application a la permission d'accéder aux contacts
       if (await FlutterContacts.requestPermission()) {
         // Récupère la liste des contacts
-        final contacts = await FlutterContacts.getContacts();
+        final contacts =
+            await FlutterContacts.getContacts(withProperties: true);
         return contacts;
       } else {
         // Si la permission est refusée, gère l'erreur ou affiche un message
