@@ -1,4 +1,4 @@
-package com.example.myussd_flutterapp
+package com.iai.myussd_flutterapp
 
 import io.flutter.embedding.android.FlutterActivity
 
